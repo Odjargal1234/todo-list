@@ -1,0 +1,52 @@
+"<!DOCTYPE html>
+<html>
+    <head>
+        <title>ToDo app</title>
+        <style>
+        body{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:90vh;
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+        }
+        .todo{
+                background-color:#fff;
+                padding:15px;
+                width:400px;
+                border-radius: 8px;
+            }
+        .todo input{
+            width:80%;
+        }
+        .todo li {
+            position:relative;
+            margin-bottom: 20px;
+        }
+        .todo ol button{
+            position:absolute;
+            right:30px;
+        }
+        .todo .del {
+            right:65px;
+        }
+        .checked{
+            color:green;
+            text-decoration:line-through;
+        }
+        </style>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        </head>
+    <body>
+        <div class="todo">
+            <h3>To Do List App</h3>
+            <input type="text">
+            <button class="add">Add</button>
+            <ol>
+
+            </ol>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
